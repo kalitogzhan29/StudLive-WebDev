@@ -1,0 +1,52 @@
+.right1{
+    width:396px;
+    background: rgba(192, 216, 143, 0.6);
+    box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border:none;
+    padding:20px 0 28px;
+    margin:40px 0 0;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+}
+.pasew{
+    
+    background: #FFFFFF;
+    border: 1px solid #376B52;
+    border-radius: 5px;
+        font-size:17px;
+        font-family:inherit;
+        color: #1d2129;
+        padding: 10px;
+        width:330px;
+        display: inline-block;
+        height:22px;
+        line-height:16px;
+        vertical-align:middle;
+    }
+    .but1 {
+        background: #376B52;
+        border-radius: 20px;
+    border: none;
+    font-family: 'Oxygen';
+    font-style: normal;
+    color:white;
+    line-height:48px;
+    padding: 0px 16px;
+    display: inline-block;
+    
+    border-radius: 6px;
+    width:332px;
+    }
+    .for{
+        font-family: 'Oxygen';
+        font-style: normal;
+        
+    color: #376B52;
+    }
+    .create{
+        weight:450px;
+        font-family: 'Oxygen';
+     font-style: normal;
+    }
