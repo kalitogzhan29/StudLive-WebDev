@@ -1,13 +1,15 @@
 .right1{
-    width:396px;
+    margin-top: 100px;
+    width:550px;
+    height: 514px;
     background: rgba(192, 216, 143, 0.6);
     box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border:none;
-    padding:20px 0 28px;
-    margin:40px 0 0;
+    padding:20px 20px 28px;
+
     border-radius: 8px;
-    margin-left:350px;
+    margin-left:450px;
     box-sizing: border-box;
 }
 .pasew{
@@ -19,11 +21,12 @@ border-radius: 5px;
     font-family:inherit;
     color: #1d2129;
     padding: 14px 16px;
-    width:330px;
+    width:460px;
     display: inline-block;
-    height:22px;
+    height:18px;
     line-height:16px;
     vertical-align:middle;
+    margin-top: 0%;
 }
 .but1 {
     background: #376B52;
@@ -32,17 +35,20 @@ border: none;
 font-family: 'Oxygen';
 font-style: normal;
 color:white;
-line-height:48px;
+line-height:30px;
 padding: 0px 16px;
 display: inline-block;
-
-border-radius: 6px;
-width:332px;
+margin-top: 35px;
+border-radius: 20px;
+width:200px;
+margin-left: 150px;
+margin-bottom: 70px;
+font-size: 16px;
 }
 .for{
     font-family: 'Oxygen';
     font-style: normal;
-    
+    margin-left: 180px;
 color: #376B52;
 }
 .passwem{
@@ -51,10 +57,34 @@ font-style: normal;
 font-weight: 400;
 margin-top:10px;
 line-height: 30px;
+margin-bottom: 0%;
+font-size: 16px;
 
 color: #376B52;
 }
+.signs-icon{
+height: 100px;
+margin: 0%;
+padding:0% ;
+}
 .logo{
     text-align: center;
+    height:120px;
+    margin-left:200px;
+    margin-top: 0%;
+    padding: 0%;
+
   
+}
+.logoword{
+    font-family: 'Kelly Slab';
+font-style: normal;
+color: #376B52;
+padding: 0%;
+margin-top: 0%;
+font-size:20px;
+}
+.main{
+    margin-top: 30px;
+    margin-left: 20px;
 }

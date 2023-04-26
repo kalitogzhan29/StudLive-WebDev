@@ -1,4 +1,6 @@
-<app-top-bar></app-top-bar>
+<ng-container *ngIf="showHeader">
+<app-top-bar ></app-top-bar>
+</ng-container>
 
 <div class="container">
   <router-outlet></router-outlet>

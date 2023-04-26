@@ -1,13 +1,15 @@
 .right1{
-    width:396px;
+    width:510px;
+    height: 670px;
     background: rgba(192, 216, 143, 0.6);
     box-shadow: 7px 7px 10px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     border:none;
     padding:20px 0 28px;
-    margin:40px 0 0;
+    margin:40px 0  0 ;
     border-radius: 8px;
 
+    margin-left: 480px;
     box-sizing: border-box;
 }
 .pasew{
@@ -18,12 +20,12 @@
         font-size:17px;
         font-family:inherit;
         color: #1d2129;
-        padding: 10px;
-        width:330px;
+        padding: 14px 16px;
+        width:460px;
         display: inline-block;
-        height:22px;
-        line-height:16px;
+        height:15px;
         vertical-align:middle;
+        margin-top: 0%;
     }
     .but1 {
         background: #376B52;
@@ -32,21 +34,46 @@
     font-family: 'Oxygen';
     font-style: normal;
     color:white;
-    line-height:48px;
+    line-height:30px;
     padding: 0px 16px;
     display: inline-block;
-    
-    border-radius: 6px;
-    width:332px;
+    margin-top: 35px;
+    border-radius: 20px;
+    width:200px;
+    margin-left: 150px;
+   margin-bottom: 35px;
+    font-size: 16px;
     }
     .for{
         font-family: 'Oxygen';
-        font-style: normal;
-        
-    color: #376B52;
+    font-style: normal;
+    margin-left: 170px;
+color: #376B52;
+margin-top: 20px;
     }
     .create{
-        weight:450px;
+    
         font-family: 'Oxygen';
      font-style: normal;
+     color: #376B52;
+     font-size: 22px;
+     font-weight: 700;
+     margin-left: 170px;
+
+    
+    }
+    .passwem{
+        font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    margin-top:4px;
+    line-height: 30px;
+    margin-bottom: 0%;
+    font-size: 14px;
+    
+    color: #376B52;
+    }
+    .main{
+        margin-top: 10px;
+        margin-left: 25px;
     }
