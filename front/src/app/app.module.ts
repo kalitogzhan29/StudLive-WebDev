@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { LastNewsComponent } from './last-news/last-news.component';
 
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     LoginComponent,
     LastNewsComponent,
 
-    SignUpComponent
+    SignUpComponent,
+     EditProfileComponent,
+     EventsComponent
   ],
   imports: [
     BrowserModule,
