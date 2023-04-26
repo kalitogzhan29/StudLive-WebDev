@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { LastNewsComponent } from './last-news/last-news.component';
 
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { OrganizationService } from './service/organization/organization.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [OrganizationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

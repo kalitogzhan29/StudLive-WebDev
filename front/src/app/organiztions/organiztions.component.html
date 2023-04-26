@@ -1,1 +1,8 @@
-<p>organiztions works!</p>
+<div>
+    <div *ngFor="let org of organizations">
+        <h3>
+            {{org.name}}
+        </h3>
+        {{org.description}}
+    </div>
+</div>
