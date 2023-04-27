@@ -7,7 +7,7 @@ export interface Organization{
 export interface Profile{
     firstName: string;
     lastName: string;
-    eMail: string;
+    email: string;
     password: string;
     faculty: string;
     course: number;
