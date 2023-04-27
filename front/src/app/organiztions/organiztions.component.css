@@ -1,0 +1,189 @@
+.container{
+    width:800px;
+    height: 230px;
+    background: rgba(192, 216, 143, 0.6);
+box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+margin-top: 40px;
+margin-left: 350px;
+}
+.imgprof{
+    background: #FFFFFF;
+border-radius: 20px;
+width:160px;
+height: 145px;
+margin-left:20px;
+
+}
+
+.main{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+
+}
+.left{
+    display:flex;
+    flex-direction:raw;
+    flex-wrap:nowrap;
+    margin-top: 0px;
+}
+.write{
+    font-family: 'Oxygen';
+font-style: normal;
+color: #376B52;
+font-weight: 400;
+margin-bottom: 5px;
+text-align: center;
+font-size: 18px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.description{
+    font-family: 'Oxygen';
+font-style: normal;
+color: #376B52;
+font-weight: 400;
+margin-left: 10px;
+}
+

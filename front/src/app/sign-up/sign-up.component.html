@@ -32,14 +32,8 @@
       </select>
       <p class="passwem">Organizations</p>
       <select name="cars" class="pasew" placeholder="Select">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-        </select>
+        <option *ngFor="let o of organizations">{{o.name}}</option>
+      </select>
     <button class="but1" type="button">Register</button>
   <br>
    <a class="for" routerLink="/login"> Already have an account?</a>

@@ -71,7 +71,10 @@
   } */
   
   .logos{
-    width:110px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+ 
   }
   /*
   Copyright Google LLC. All Rights Reserved.
