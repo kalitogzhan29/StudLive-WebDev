@@ -1,5 +1,6 @@
 from django.db import models
-from organization import Organization
+from api.models import Organization
+
 
 class Event(models.Model):
     title = models.CharField(max_length=50)

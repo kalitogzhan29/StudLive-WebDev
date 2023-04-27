@@ -4,10 +4,10 @@ from django.contrib.auth.hashers import make_password
 class Profile(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    email = models.EmailField(required=True)
-    password = models.CharField(required=True)
+    email = models.EmailField()
+    password = models.CharField(max_length=30)
     faculty = models.CharField(max_length=50)
-    image = models.ImageField(default='../../../front/src/assets/default_profile.png')
+    image = models.ImageField()
 
     class Meta:
         verbose_name = 'Profile'
