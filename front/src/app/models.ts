@@ -13,3 +13,9 @@ export interface Profile{
     course: number;
     organization: string;
 }
+
+export interface LastNews {
+   title:string;
+   description:string;
+}
+
