@@ -15,7 +15,15 @@ export interface Profile{
 }
 
 export interface LastNews {
-   title:string;
-   description:string;
+   title: string;
+   description: string;
+   pub_date: Date;
+}
+
+export interface Event {
+    title: string;
+    description: string;
+    pub_date: Date;
+    event_date: Date;
 }
 

@@ -17,4 +17,25 @@ export class OrganizationService {
     return this.client.get<Organization[]>(`${this.BASE_URL}/api/organizations/`)
   }
 
+  createOrganization(name: string, description: string): Observable<Organization>{
+    return this.client.post<Organization>(
+      `${this.BASE_URL}/api/organizations/`,
+      {name: name,
+      description: description}
+    )
+  }
+
+  deleteOrganization(organization_id: number): Observable<any>{
+    return this.client.delete<any>(
+      `${this.BASE_URL}/api/organizations/${organization_id}/`
+    )
+  }
+  
+  updateOrganization(organization_id: number, name: string, description: string): Observable<Organization>{
+    return this.client.put<Organization>(
+      `${this.BASE_URL}/api/organizations/${organization_id}/`,
+      {name: name,
+      description: description}
+    )
+  }
 }
