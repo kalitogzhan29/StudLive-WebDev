@@ -1,0 +1,19 @@
+.container{
+    width:400px;
+    height: 280px;
+    background: #84CDC9;;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+margin-top: 40px;
+margin-left: 100px;
+}
+.buyTicket{
+    margin-top: 180px;
+   padding-left: 60px;
+   
+
+}
+.ticket{
+    height:120px;
+    width: 140px;
+}
