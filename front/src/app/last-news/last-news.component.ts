@@ -6,16 +6,49 @@ import { LastNews } from '../models';
   templateUrl: './last-news.component.html',
   styleUrls: ['./last-news.component.css']
 })
+
+
 export class LastNewsComponent {
-  vacancies: LastNews[] = [];
-  id: number | undefined;
-  title: string = '';
-  description: string = '';
+  news: LastNews[] = []
+  newTitle: string = '';
+  newDescription: string = '';
+ 
 
   constructor(private lastNewsService:LastNewsService){}
- 
-  // ngOnInit(): void{
-  //   this.id = Number(this.route.snapshot.paramMap.get('id'));
-  //   this.lastNewsService.getVacanci(this.id).subscribe((vacancies) => this.vacancies = vacancies);
-  // }
+  getOrganizations() {
+    this.lastNewsService.getNews().subscribe((data) =>
+      this.news = data
+    );
+  }
+
+  addOrganization(){
+    this.lastNewsService.createNews(this.newTitle, this.newDescription,).subscribe((data) => {
+      this.news.push(data)
+      this.newTitle=''
+      this.newDescription=''
+   
+    })
+  }
+
+  deleteOrganization(organization_id: number){
+    this.lastNewsService.deleteNews(organization_id).subscribe((organization) =>{
+      this.news = this.news.filter((data) => organization.id !== organization_id);
+    })
+  }
+
+  updateOrganization(organization_id: number){
+    this.lastNewsService.updateNews(organization_id, this.newTitle, this.newDescription,).subscribe((data) => {
+      this.news.forEach((data) =>{
+          if (data.id == organization_id){
+            data.title = this.newTitle
+          }
+        }
+      );
+      this.newTitle = ''
+      this.newDescription=''
+
+    })
+  }
+
+  
 }

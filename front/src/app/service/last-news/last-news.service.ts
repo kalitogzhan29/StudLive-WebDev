@@ -7,6 +7,7 @@ import { LastNews } from 'src/app/models';
 @Injectable({
   providedIn: 'root'
 })
+
 export class LastNewsService {
   BASE_URL = 'http://127.0.0.1:8000'
   id: number | undefined;
@@ -22,7 +23,8 @@ export class LastNewsService {
     return this.client.post<LastNews>(
       `${this.BASE_URL}/api/news/`,
       {title: title,
-      description: description}
+      description: description,
+    }
     )
   }
 
@@ -36,7 +38,8 @@ export class LastNewsService {
     return this.client.put<LastNews>(
       `${this.BASE_URL}/api/news/${news_id}/`,
       {title: title,
-      description: description}
+      description: description,
+     }
     )
   }
 }
