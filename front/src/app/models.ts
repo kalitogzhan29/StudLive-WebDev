@@ -1,10 +1,12 @@
 export interface Organization{
+    id: number;
     name:string;
     description:string;
     number_of_students:number;
 }
 
 export interface Profile{
+    id: number;
     firstName: string;
     lastName: string;
     email: string;
@@ -15,12 +17,14 @@ export interface Profile{
 }
 
 export interface LastNews {
+    id: number;
    title: string;
    description: string;
    pub_date: Date;
 }
 
 export interface Event {
+    id: number;
     title: string;
     description: string;
     pub_date: Date;
