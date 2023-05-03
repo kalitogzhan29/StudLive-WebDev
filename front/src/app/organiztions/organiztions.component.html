@@ -1,29 +1,17 @@
-<p></p>
-
-
 
 <div class="container">
- <!-- *ngFor="let org of organizations"> -->
+ <div *ngFor="let org of organizations">  
       
     <div class="main">
      <div class="right"> 
         <p class="write">
-           ART HOUSE
+           {{org.name}}
         </p></div>
        <div class="left" > 
            <img class="imgprof" src="assets\profile_photo.jpg"/>
         
-       <p class="description">  KBTU Big City Lights conducts inter-university and university events, creates charity and entertainment projects, and also collaborates with youth organizations from other universities of the Republic of Kazakhstan.
-
-At the events held, the organizers create a space in which students reveal their talents, intellectual abilities and creative potential.
-<br> <b>Projects:</b>
-
-Blind Dating
-
-Flashing Lights Party - A party in the style of flashing lights, combining the elite universities of Almaty, such as KBTU, KIMEP, MAB and UIB.
-
-The Last Samurai - An exciting game with an intriguing storyline in which each participant can feel like a real killer.</p>
-</div>
+       <p class="description"> {{org.description}}</p>
+</div></div> >
 </div>
      
 </div>

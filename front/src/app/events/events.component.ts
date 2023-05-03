@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent {
-
+  // share(link:string|URL|undefined) {
+  //   window.open("https://web.telegram.org/z/#1409292311" + link,'menubar=off, toolbar=off');
+  // }
 }
