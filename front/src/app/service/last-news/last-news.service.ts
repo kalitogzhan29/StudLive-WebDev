@@ -24,7 +24,8 @@ export class LastNewsService {
     return this.client.post<LastNews>(
       `${this.BASE_URL}/api/news/`,
       {title: title,
-      description: description}
+      description: description,
+    }
     )
   }
 
@@ -38,7 +39,8 @@ export class LastNewsService {
     return this.client.put<LastNews>(
       `${this.BASE_URL}/api/news/${news_id}/`,
       {title: title,
-      description: description}
+      description: description,
+     }
     )
   }
 
