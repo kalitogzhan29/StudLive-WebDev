@@ -1,19 +1,15 @@
-
-<div class="container">
- <div *ngFor="let org of organizations">  
-      
-    <div class="main">
-     <div class="right"> 
-        <p class="write">
-           {{org.name}}
-        </p></div>
-       <div class="left" > 
-           <img class="imgprof" src="assets\profile_photo.jpg"/>
-        
-       <p class="description"> {{org.description}}</p>
-</div></div> >
-</div>
-     
-</div>
+<div *ngFor="let org of organizations" class="container"> 
+      <div class="main">
+         <div class="right"> 
+            <p class="write">
+            {{org.name}}
+            </p>
+         </div>
+            <div class="left" > 
+            <img class="imgprof" src="assets\profile_photo.jpg"/>
+            <p class="description"> {{org.description}}</p>
+         </div>
+      </div>
+</div>    
 
 
