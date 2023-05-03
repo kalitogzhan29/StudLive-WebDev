@@ -37,3 +37,6 @@ def organization_detail(request, organization_id):
     elif request.method == 'DELETE':
         organization.delete()
         return Response({'deleted': True})
+    
+
+# FBV for event

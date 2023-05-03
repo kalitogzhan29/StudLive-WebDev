@@ -17,8 +17,3 @@ class OrganizationSerializer(serializers.Serializer):
         instance.number_of_students = validated_data.get('number_of_students', instance.number_of_students)
         instance.save()
         return instance
-
-class OrganizationModelSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.Organization
-        fields = '__all__'

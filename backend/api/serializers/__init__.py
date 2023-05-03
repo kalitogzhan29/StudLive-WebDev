@@ -1,1 +1,3 @@
-from .organization_srlzr import *
+from .organization import *
+from .event import *
+from .news import *

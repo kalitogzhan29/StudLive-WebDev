@@ -5,6 +5,10 @@ from api import models
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'number_of_students')
 
-@admin.register(models.Profile)
-class ProfileAdmin(admin.ModelAdmin):
-    list_display = ('id', 'first_name', 'last_name')
+@admin.register(models.Event)
+class EventAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'description')
+
+@admin.register(models.News)
+class NewsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'title', 'pub_date')
