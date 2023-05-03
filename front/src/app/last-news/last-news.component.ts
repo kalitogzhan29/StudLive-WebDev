@@ -15,13 +15,13 @@ export class LastNewsComponent {
  
 
   constructor(private lastNewsService:LastNewsService){}
-  getOrganizations() {
+  getNews() {
     this.lastNewsService.getNews().subscribe((data) =>
       this.news = data
     );
   }
 
-  addOrganization(){
+  addNews(){
     this.lastNewsService.createNews(this.newTitle, this.newDescription,).subscribe((data) => {
       this.news.push(data)
       this.newTitle=''
@@ -30,13 +30,13 @@ export class LastNewsComponent {
     })
   }
 
-  deleteOrganization(organization_id: number){
+  deleteNews(organization_id: number){
     this.lastNewsService.deleteNews(organization_id).subscribe((organization) =>{
       this.news = this.news.filter((data) => organization.id !== organization_id);
     })
   }
 
-  updateOrganization(organization_id: number){
+  updateNews(organization_id: number){
     this.lastNewsService.updateNews(organization_id, this.newTitle, this.newDescription,).subscribe((data) => {
       this.news.forEach((data) =>{
           if (data.id == organization_id){

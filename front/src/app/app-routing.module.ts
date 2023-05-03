@@ -9,6 +9,7 @@ import { LastNewsComponent } from './last-news/last-news.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { EventsComponent } from './events/events.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { LastPageComponent } from './last-page/last-page.component';
 
 const routes: Routes = [
   {path:"main",component:MainPageComponent},
@@ -16,10 +17,11 @@ const routes: Routes = [
   {path:"goverment",component:GovermentComponent},
   {path:"profile",component:ProfileComponent},
   {path:"login",component:LoginComponent},
-  {path:"lastNews",component:LastNewsComponent},
+  {path:"lastnews",component:LastNewsComponent},
   {path:"signup",component:SignUpComponent},
   {path:"events",component:EventsComponent},
-  {path:"editprofile",component:EditProfileComponent}
+  {path:"editprofile",component:EditProfileComponent},
+  {path:"lastnews/:newsId", component:LastPageComponent}
 ];
 
 @NgModule({
