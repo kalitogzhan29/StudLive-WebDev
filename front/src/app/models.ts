@@ -31,3 +31,8 @@ export interface Event {
     event_date: Date;
 }
 
+export interface Goverment{
+    id:number;
+    description:string;
+}
+

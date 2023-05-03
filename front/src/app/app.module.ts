@@ -20,6 +20,7 @@ import { OrganizationService } from './service/organization/organization.service
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,8 +34,8 @@ import { HttpClientModule } from '@angular/common/http';
 
     SignUpComponent,
      EditProfileComponent,
-     EventsComponent
-  ],
+     EventsComponent,
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
