@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { OrganiztionsComponent } from './organiztions/organiztions.component';
-import { GovermentComponent } from './goverment/goverment.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { LastNewsComponent } from './last-news/last-news.component';
@@ -19,7 +18,10 @@ import { EventsComponent } from './events/events.component';
 import { OrganizationService } from './service/organization/organization.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LastPageComponent } from './last-page/last-page.component';
+
 import { OrganizationDetailComponent } from './organization-detail/organization-detail.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -29,7 +31,6 @@ import { OrganizationDetailComponent } from './organization-detail/organization-
     TopBarComponent,
     MainPageComponent,
     OrganiztionsComponent,
-    GovermentComponent,
     ProfileComponent,
     LoginComponent,
     LastNewsComponent,
@@ -43,6 +44,7 @@ import { OrganizationDetailComponent } from './organization-detail/organization-
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
   ],
   providers: [OrganizationService],

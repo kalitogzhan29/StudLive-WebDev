@@ -56,7 +56,7 @@ export class EventsComponent {
       this.newEventDate={} as Date
     })
   }
-  share() {
+  buyTicket() {
     window.open("https://web.telegram.org/z/" ,'menubar=off, toolbar=off');
   }
 }

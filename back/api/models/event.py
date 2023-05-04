@@ -1,11 +1,10 @@
 from django.db import models
 from api.models.organization import Organization
-from django.utils import timezone
 
 
 class Event(models.Model):
     title = models.CharField(max_length=50)
-    description = models.TextField()
+    description = models.TextField(default="Most interesting and expected event in the KBTU.")
     pub_date = models.DateField(auto_now=True)
     event_date = models.DateField()
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, related_name='events',

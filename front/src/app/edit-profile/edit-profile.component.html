@@ -2,29 +2,22 @@
       
     <div class="main">
      
+
        <div class="left" > 
            <img class="imgprof" src="assets\profile_photo.jpg"/>
        </div>
        <div class="right"> 
      <div class="part">
-     <p class="write">Name</p>
-     <input class="names" type="email" placeholder="Togzhan Kali">
+     <p class="write">First Name</p>
+     <input [(ngModel)]="firstName" class="names" type="email" placeholder="Togzhan">
    </div>
-   <div class="part"> 
-     <p class="write">Course</p>
-    <select name="faculty" class="names" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-</select>
-   </div>
+   <div class="part">
+    <p class="write">Last Name</p>
+    <input [(ngModel)]="lastName" class="names" type="email" placeholder="Kali">
+  </div>
    <div class="part"> 
      <p class="write">Faculty</p>
-     <select name="faculty" class="names" >
+     <select [(ngModel)]="faculty" name="faculty" class="names" >
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -36,7 +29,7 @@
    </div>
    <div class="part"> 
      <p class="write">Organization</p>
-     <select name="faculty" class="names" >
+     <select [(ngModel)]="organization"name="faculty" class="names" >
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

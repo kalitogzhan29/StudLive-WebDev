@@ -12,7 +12,6 @@ export interface Profile{
     email: string;
     password: string;
     faculty: string;
-    course: number;
     organization: string;
 }
 
@@ -31,8 +30,8 @@ export interface Event {
     event_date: Date;
 }
 
-export interface Goverment{
-    id:number;
-    description:string;
+
+export interface Faculty{
+    name:string;
 }
 

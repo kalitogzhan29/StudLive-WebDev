@@ -50,6 +50,13 @@ class Faculty(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+class StudGovernment(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    faculty = models.ForeignKey(Faculty, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f'{self.name} {self.description}'
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)

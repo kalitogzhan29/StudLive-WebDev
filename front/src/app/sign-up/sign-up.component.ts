@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Organization } from '../models';
 import { OrganizationService } from '../service/organization/organization.service';
+import { Faculty } from '../models';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,6 +10,14 @@ import { OrganizationService } from '../service/organization/organization.servic
 })
 export class SignUpComponent implements OnInit{
   organizations: Organization[] = []
+  lastName:string='';
+  firstName:string='';
+  email:string='';
+  password:string='';
+  faculty:string='';
+  organization:string='';
+
+
   // faculties: 
 
   constructor(private orgService: OrganizationService) {}
@@ -22,4 +31,6 @@ export class SignUpComponent implements OnInit{
       this.organizations = data;
     })
   }
+
+  
 }

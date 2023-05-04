@@ -2,7 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { OrganiztionsComponent } from './organiztions/organiztions.component';
-import { GovermentComponent } from './goverment/goverment.component';
+
 import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { LastNewsComponent } from './last-news/last-news.component';
@@ -14,7 +14,7 @@ import { LastPageComponent } from './last-page/last-page.component';
 const routes: Routes = [
   {path:"main",component:MainPageComponent},
   {path:"organiztions",component:OrganiztionsComponent},
-  {path:"goverment",component:GovermentComponent},
+ 
   {path:"profile",component:ProfileComponent},
   {path:"login",component:LoginComponent},
   {path:"lastnews",component:LastNewsComponent},

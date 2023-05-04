@@ -1,15 +1,18 @@
-<div *ngFor="let org of organizations" class="container"> 
-      <div class="main">
-         <div class="right"> 
-            <p class="write">
-            {{org.name}}
-            </p>
-         </div>
-            <div class="left" > 
-            <img class="imgprof" src="assets\profile_photo.jpg"/>
-            <p class="description"> {{org.description}}</p>
-         </div>
-      </div>
-</div>    
+<div class="org-container">
 
+   <div *ngFor="let org of organizations" class="org-card"> 
+      <h2>{{org.name}}</h2>
+      <div>
+         <span>Info:</span> {{org.description}}
+      </div>
+      <div>
+         <span>Number of members:</span> {{org.number_of_students}}
+      </div>
+      <div class="btns-wrapper">
+         <button class="btn edit">Edit</button>
+         <button class="btn del">Delete</button>
+      </div>
+   </div>    
+   
+</div>
 
