@@ -3,35 +3,21 @@
     <p class="create">Create account</p>
 
     <p class="passwem">Last Name</p>
-    <input class="pasew" type="email" >
+    <input [(ngModel)]="lastName" class="pasew" type="email" >
     <p class="passwem">First Name</p>
-    <input class="pasew" type="email" >
+    <input [(ngModel)]="firstName" class="pasew" type="email" >
     <p class="passwem">E-mail</p>
-    <input class="pasew" type="email" >
+    <input [(ngModel)]="email" class="pasew" type="email" >
    <p class="passwem">Password</p>
-    <input class="pasew" type="password" >
+    <input [(ngModel)]="password" class="pasew" type="password" >
     <p class="passwem">Faculty</p>
-    <select name="cars" class="pasew" >
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
+    <select [(ngModel)]="faculty" name="cars" class="pasew" >
+        <option value>1</option>
+ 
 </select>
-    <p class="passwem">Course</p>
-    <select name="cars" class="pasew" placeholder="Select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-      </select>
+    
       <p class="passwem">Organizations</p>
-      <select name="cars" class="pasew" placeholder="Select">
+      <select [(ngModel)]="organization" name="cars" class="pasew" placeholder="Select">
         <option *ngFor="let o of organizations">{{o.name}}</option>
       </select>
     <button class="but1" type="button">Register</button>

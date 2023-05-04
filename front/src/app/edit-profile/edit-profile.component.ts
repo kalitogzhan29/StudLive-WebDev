@@ -10,11 +10,10 @@ import { Profile } from '../models';
 export class EditProfileComponent {
 
   profile: Profile[] = []
-  newName: string = '';
-  newLastName: string = '';
-  newCourse: number=0;
-  newFaculty:string = '';
-  newOrganization:string = '';
+  lastName:string='';
+  firstName:string='';
+  faculty:string='';
+  organization:string='';
 
   constructor(private profileService:ProfileService){}
   getProfile() {
@@ -22,25 +21,6 @@ export class EditProfileComponent {
       this.profile = data
     );
   }
-  // saveData(){
-
-  //   this.profileService.updateProfile(
-  //                                 this.newName,
-  //                                 this.newLastName,
-  //                                  this.newCourse,
-  //                                  this.newFaculty,
-  //                                  this.newCourse,
-  //                                  this.newOrganization).subscribe((data) => {
-  //     this.profile.forEach((data) =>{
-  //         if (data.id == organization_id){
-  //           data.title = this.newTitle
-  //         }
-  //       }
-  //     );
-  //     this.newTitle = ''
-  //     this.newDescription=''
-
-  //   })
-  // }
+  
 
 }
