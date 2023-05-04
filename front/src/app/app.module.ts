@@ -19,6 +19,7 @@ import { EventsComponent } from './events/events.component';
 import { OrganizationService } from './service/organization/organization.service';
 import { HttpClientModule } from '@angular/common/http';
 import { LastPageComponent } from './last-page/last-page.component';
+import { OrganizationDetailComponent } from './organization-detail/organization-detail.component';
 
 
 
@@ -37,6 +38,7 @@ import { LastPageComponent } from './last-page/last-page.component';
      EditProfileComponent,
      EventsComponent,
      LastPageComponent,
+     OrganizationDetailComponent,
       ],
   imports: [
     BrowserModule,
